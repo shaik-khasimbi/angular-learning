@@ -4,10 +4,10 @@
 <span>
 	<ul>
 		<li><a routerLink="/" >Home</a></li>
-		<li><a routerLink="/signIn" >Login</a></li>
+		<li *ngIf="!isUserLogged"><a routerLink="/signIn" >Login</a></li>
 		<li><a routerLink="/about" >About Us</a></li>
 		<li><a routerLink="/contact" >Contact Us</a></li>
-    <li><a routerLink="/profile" >My Profile</a></li>
+    <li *ngIf="isUserLogged"><a routerLink="/profile" >My Profile</a></li>
 	</ul>
 </span>
 <router-outlet></router-outlet>
