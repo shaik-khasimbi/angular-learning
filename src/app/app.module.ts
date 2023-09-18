@@ -8,6 +8,7 @@ import { SignInComponent } from './sign-in/sign-in.component';
 import { AboutusComponent } from './aboutus/aboutus.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
 import { MyProfileComponent } from './my-profile/my-profile.component';
+import { AuthService } from './services/auth.service';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,7 @@ import { MyProfileComponent } from './my-profile/my-profile.component';
     AppRoutingModule,
     FormsModule
   ],
-  providers: [],
+  providers: [AuthService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

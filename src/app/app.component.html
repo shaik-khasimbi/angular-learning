@@ -10,5 +10,15 @@
     <li *ngIf="isUserLogged"><a routerLink="/profile" >My Profile</a></li>
 	</ul>
 </span>
+<div *ngIf="isUserLogged">
+<div>FirstName : {{firstName}}</div>
+<div>LastName : {{lastName}}</div>
+<div>DOB : {{dob}}</div>
+<div>MobileNumber : {{mobileNumber}}</div>
+<div>Email : {{email}}</div>
+<div>Car : {{car}}</div><br>
+<div><a  routerLink = '/profile'>Please click here to edit </a> </div>
+
+</div>
 <router-outlet></router-outlet>
 </div>

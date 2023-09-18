@@ -1,4 +1,24 @@
 <p>my-profile works!</p>
 <div>
-    <input type ="button" value ="LogOut" (click) = "logoutUser()">
+
+    <div>FirstName : <input type='text' [(ngModel)]='firstName' /></div><br>
+    <div>LastName : <input type='text' [(ngModel)]='lastName' /></div><br>
+    <div>DOB : <input type='date' [(ngModel)]='dob' /></div><br>
+    <div> Mobile Number : <input type='number' [(ngModel)]='mobileNumber' /></div> <br>
+    <div> Email : <input type='text' [(ngModel)]='email' /></div><br>
+
+    <div> Do you have Car :
+        <label>
+            <input type='radio' value='Yes'  [(ngModel)]='car'/>
+            <span>yes</span>
+        </label>
+        <label>
+            <input type='radio' value='no'  [(ngModel)]='car'/>
+            <span>No</span>
+        </label>
+    </div>
+
+    <div><input type='button' value='submit' (click)='submitProfileForm()' /></div><br>
+
+    <input type="button" value="LogOut" (click)="logoutUser()">
 </div>
